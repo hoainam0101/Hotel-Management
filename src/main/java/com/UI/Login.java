@@ -20,6 +20,7 @@ public class Login extends javax.swing.JFrame {
         init();
     }
 
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -35,7 +36,7 @@ public class Login extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         txt_UserName = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
-        kButton1 = new com.k33ptoo.components.KButton();
+        btn_Login = new com.k33ptoo.components.KButton();
         lbl_ShowPass = new javax.swing.JLabel();
         txt_Pass = new javax.swing.JPasswordField();
         lbl_LogoHotel = new javax.swing.JLabel();
@@ -62,8 +63,8 @@ public class Login extends javax.swing.JFrame {
 
         txt_UserName.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
 
-        kButton1.setText("Đăng nhập");
-        kButton1.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        btn_Login.setText("Đăng nhập");
+        btn_Login.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
 
         lbl_ShowPass.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_ShowPass.setIcon(new ImageIcon( getClass().getClassLoader().getResource("Images/noshowpass.png"))
@@ -125,7 +126,7 @@ public class Login extends javax.swing.JFrame {
                                         .addComponent(lbl_ShowPass, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(kGradientPanel1Layout.createSequentialGroup()
                                         .addGap(28, 28, 28)
-                                        .addComponent(kButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addComponent(btn_Login, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(kGradientPanel1Layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
                                 .addComponent(lbl_LogoHotel, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -160,7 +161,7 @@ public class Login extends javax.swing.JFrame {
                         .addGap(39, 39, 39)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(kButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btn_Login, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(lbl_ShowPass, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(lbl_Sceen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -246,10 +247,10 @@ boolean showPass;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private com.k33ptoo.components.KButton btn_Login;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JSeparator jSeparator1;
-    private com.k33ptoo.components.KButton kButton1;
     private com.k33ptoo.components.KGradientPanel kGradientPanel1;
     private javax.swing.JLabel lblKetThuc;
     private javax.swing.JLabel lblThuLai;
